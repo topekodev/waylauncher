@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <object class="GtkApplicationWindow" id="window">
+        <property name="title" translatable="yes">Waylauncher</property>
+        <property name="default-width">800</property>
+        <property name="default-height">0</property>
+        <child>
+            <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <child>
+                    <object class="GtkEntry" id="input">
+                        <property name="placeholder-text" translatable="yes">Search</property>
+                        <property name="has-frame">false</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkScrolledWindow" id="result_window">
+                        <property name="vexpand">true</property>
+                        <child>
+                            <object class="GtkListBox" id="result_list">
+                                <property name="vexpand">true</property>
+                                <property name="selection-mode">single</property>
+                                <property name="valign">start</property>
+                                <style>
+                                    <class name="result-list"/>
+                                </style>
+                            </object>
+                        </child>
+                        <style>
+                            <class name="result-window"/>
+                        </style>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </object>
+</interface>

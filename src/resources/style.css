@@ -1,0 +1,29 @@
+window {
+    background-color: transparent;
+    border: 1px solid @borders;
+    border-radius: 10px;
+}
+entry {
+    padding: 18px 20px;
+    font-size: 22px;
+    outline: none;
+    border-bottom: 1px solid @borders;
+    color: white;
+    background-color: alpha(@theme_bg_color, 0.95);
+}
+.result-window {
+    background-color: alpha(@theme_bg_color, 0.95);
+    color: @theme_fg_color;
+}
+.result-list {
+    background-color: transparent;
+    color: @theme_fg_color;
+}
+.result-list row {
+    padding: 18px 20px;
+    font-size: 16px;
+}
+.result-list row:selected {
+    background-color: alpha(@theme_selected_bg_color, 0.95);
+    color: @theme_selected_fg_color;
+}
