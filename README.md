@@ -7,6 +7,8 @@ I am a Rust beginner and this is my first GTK app.
 - Fuzzy search
 - XDG desktop entries
 
+![image](https://github.com/user-attachments/assets/05b843f2-bc2b-4e67-87b3-ef213e4ac7b1)
+
 ## Example config
 ~/.config/waylauncher/config.toml
 ```toml
